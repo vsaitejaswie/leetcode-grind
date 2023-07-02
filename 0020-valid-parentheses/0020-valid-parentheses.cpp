@@ -10,25 +10,19 @@ public:
 
             if(s[i]=='(' || s[i]=='{' || s[i]=='['){
                 store.push(s[i]);
-                continue;
-            }
+                continue;}
 
             if(store.empty()){
-                return false;
-            }
+                return false;}
 
             if(s[i] == ')' && store.top()=='('){
-                store.pop();
-            }
+                store.pop();}
             else if(s[i] == '}' && store.top()=='{'){
-                store.pop();
-            }
+                store.pop();}
             else if(s[i] == ']' && store.top()=='['){
-                store.pop();
-            }
+                store.pop();}
             else{
-                return false;
-            }  
+                return false;}  
             countPop++;
         }
         if(countPop!=s.size()/2) return false;
