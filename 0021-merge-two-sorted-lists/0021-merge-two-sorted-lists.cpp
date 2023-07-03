@@ -35,7 +35,7 @@
 //     }
 // };
 
-// Cuttent solution
+// Current solution
 
 /**
  * Definition for singly-linked list.
