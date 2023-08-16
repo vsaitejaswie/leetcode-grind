@@ -23,3 +23,6 @@ public:
         return maxi;
     }
 };
+
+// while loop has been used because it doesn't make sense to use for loop
+// for sliding window implementation for this problem
