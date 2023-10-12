@@ -44,3 +44,4 @@ Products table:
 +-------------+
 <strong>Explanation:</strong> Only products 1 and 3 are both low fat and recyclable.
 </pre>
+
