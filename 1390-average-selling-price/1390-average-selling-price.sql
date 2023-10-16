@@ -15,3 +15,4 @@ GROUP BY p.product_id
 
 # LEFT JOIN on Prices
 # If I want null value against a column in the joined table, I need to use the condition as part of JOIN statement and not as part of WHERE clause
+# Explore using ifnull() next time
