@@ -15,6 +15,10 @@ SELECT
 FROM Transactions
 GROUP BY month, country
 
+# try THIS NEXT TIME
+# SUM(IF(state = 'approved', amount, 0))
+# https://www.w3schools.com/sql/func_mysql_date_format.asp
+
 
 
 # using AVG(rating<3) is the easiest way to calculate the fraction of ratings whose rating is less than 3
