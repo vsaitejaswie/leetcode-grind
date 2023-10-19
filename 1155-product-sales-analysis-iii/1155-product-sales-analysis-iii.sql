@@ -6,3 +6,6 @@ FROM Sales s,(
   GROUP BY product_id
 ) ns
 WHERE ns.product_id = s.product_id AND year = first_year
+
+# Just because you aggregate one column for MIN, MAX, SUM...
+# it doesn't choose the respective corresponding row value for other columns
