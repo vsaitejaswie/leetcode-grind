@@ -6,3 +6,5 @@ FROM (
   GROUP BY num
 ) nn
 WHERE nn.cnt = 1
+
+# Only one level of aggregation is possible per query
