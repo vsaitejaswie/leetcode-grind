@@ -1,7 +1,7 @@
 # Write your MySQL query statement below
 SELECT ns.product_id, s.year AS first_year, s.quantity, s.price
 FROM Sales s,(
-  SELECT product_id, MIN(year) AS first_year, quantity, price
+  SELECT product_id, MIN(year) AS first_year
   FROM Sales
   GROUP BY product_id
 ) ns
