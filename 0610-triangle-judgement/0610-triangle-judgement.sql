@@ -9,3 +9,6 @@ SELECT *,
         ELSE 'No'
     END AS triangle
 FROM Triangle
+
+
+# When to use CASE and when to use IF
