@@ -13,9 +13,9 @@ public:
         //complement exists in the map and then proceeding with new map additions
 
         for(int i=0; i<nums.size(); i++){
-            bool match = compare.count(target-nums[i]);
-            cout<<match<<endl;
-            if(compare.count(target-nums[i])>0){
+            bool match = compare.count(target-nums[i]); // for debug
+            cout<<match<<endl; // for debug
+            if(compare.find(target-nums[i]) != compare.end()){
                     result.push_back(i);
                     result.push_back(compare[target-nums[i]]);
                     break;
