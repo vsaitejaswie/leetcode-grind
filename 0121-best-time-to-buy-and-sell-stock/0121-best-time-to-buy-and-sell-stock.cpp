@@ -29,7 +29,7 @@ public:
         //if(n == 0 || n == 1) return 0;
         int f=0,r=1;
 
-        while(f<r && r<n){ // It is not required to mention f<r here
+        while(f<r && r<n){
             int difference = prices[r] - prices[f];
             if(prices[r] <= prices[f]) {
                 f = r; 
