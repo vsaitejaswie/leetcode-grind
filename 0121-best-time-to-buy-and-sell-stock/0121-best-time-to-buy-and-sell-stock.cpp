@@ -29,13 +29,13 @@ public:
         //if(n == 0 || n == 1) return 0;
         int f=0,r=1;
 
-        while(f<r && r<n){
+        while(f<r && r<n){ // It is not required to mention f<r here
             int difference = prices[r] - prices[f];
-            if(prices[r] <= prices[f] && r<n) {
+            if(prices[r] <= prices[f]) {
                 f = r; 
                 //r = f+1; // this is right but instead use it outside the condition
             }
-            else if(prices[r] > prices[f] && r<n) {
+            else if(prices[r] > prices[f]) {
                 maximum = max(maximum, difference);
                 //r++; // this is right but instead use it outside the condition
             }
